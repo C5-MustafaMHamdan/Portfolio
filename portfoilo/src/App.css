@@ -1,0 +1,25 @@
+ body{
+
+     background-color: black;
+    color: aqua; 
+ }
+
+
+
+ .App{
+  
+
+ }
+
+.App .about-me{
+    margin-top:15% ;
+  
+    align-items: center;
+    background-color: black;
+    color: aqua;
+    text-align: center;
+
+}
+
+
+
