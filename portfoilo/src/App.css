@@ -1,25 +1,51 @@
- body{
-
-     background-color: black;
-    color: aqua; 
- }
-
-
-
- .App{
-  
-
- }
-
-.App .about-me{
-    margin-top:15% ;
-  
-    align-items: center;
-    background-color: black;
-    color: aqua;
-    text-align: center;
-
+body {
+  background-color: black;
+  color: aqua;
 }
 
+.App .about-me {
+  align-items: center;
+  background-color: black;
+  color: aqua;
+  text-align: center;
+  font-size: 30px;
+}
 
+.App .about-me {
+  align-items: center;
+  background-color: black;
+  color: aqua;
+  text-align: center;
+  font-size: 30px;
+}
 
+.App .my-experience {
+  margin-top: 250px;
+  align-items: center;
+  background-color: black;
+  color: aqua;
+  text-align: center;
+  font-size: 30px;
+}
+
+.App .contact-me {
+  margin-top: 500px;
+  align-items: center;
+  background-color: black;
+  color: aqua;
+  text-align: center;
+  font-size: 30px;
+}
+
+.App .navbar {
+  align-items: center;
+
+  font-size: 30px;
+}
+
+.App .navbar button {
+  border: none;
+  background-color: black;
+  color: aqua;
+  font-size: 30px;
+}
