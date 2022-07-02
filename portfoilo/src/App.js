@@ -22,19 +22,26 @@ function App() {
         <button onClick={scrollOnExperience}> myExperience</button>
         <button onClick={scrollOnContact}> Contact</button>
       </div>
+<div className="about">
+      <div ref={about} className="about-left">
+             
+        <span className="My-Name">Mustafa Hamdan </span>
+        <p className="about_me_text">
+        I am Mustafa, a web developer who is passionate about learning and dealing with new technology. I always strive to develop myself
+ 
+        </p>
 
-      <div ref={about} className="about-me">
-        <h1> Hi,</h1> <br></br> <h1> I am Mustafa Hamdan Web Developer </h1>
-        <br></br>
-        <h2>Full-Stack Developer</h2>
-     
-        <img src=" ../assist/portofoilo.jpg"/>    
-           
-        
+        </div>
+
+        <div className="about-right">
+        <img className="myImg" src="https://media-exp2.licdn.com/dms/image/C4E03AQFqzpYxgLmVkg/profile-displayphoto-shrink_200_200/0/1656766220828?e=1661990400&v=beta&t=YcTNSOnBNtyf7A0eB8reH5IccDkKLxkDmjVvZS-uuxk" / >
       </div>
+       </div>
 
       <div ref={myExperience} className="my-experience">
         <h2>This Is My Projects </h2>
+
+
       </div>
 
       <div ref={myContact} className="contact-me">
