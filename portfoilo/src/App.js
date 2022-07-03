@@ -5,6 +5,11 @@ import AboutMe from "./components/aboutMe";
 import Navbar from "./components/navbar";
 import Experience from "./components/experience";
 import React, { useRef } from "react";
+/* import 'bootstrap/dist/css/bootstrap.min.css';
+ */
+
+
+
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 function App() {
   const about = useRef(null);
@@ -22,7 +27,7 @@ function App() {
   return (
     <div className="App">
       <div className="navbar">
-        <button onClick={scrollOnAbout}> about</button>
+        <button onClick={scrollOnAbout}> About</button>
         <button onClick={scrollOnExperience}> Projects</button>
         <button onClick={scrollOnContact}> Contact</button>
         <button onClick={scrollOnSkills}> Skills</button>
@@ -49,34 +54,34 @@ function App() {
 
         <div className="tech-skills">
           <div className="tech">
-            HTML5{" "}
+            
             <img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" />
           </div>
           <div className="tech">
-            CSS3{" "}
+            
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" />
           </div>
           <div className="tech">
-            Node js{" "}
+        
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/2560px-Node.js_logo_2015.svg.png" />{" "}
           </div>
           <div className="tech">
-            Express{" "}
+           
             <img src="https://initialcommit.com/img/initialcommit/beginners-guide-to-using-express-js-and-node-js-framework.png" />
           </div>
           <div className="tech">
-            MySQL <img src="https://pngimg.com/uploads/mysql/mysql_PNG31.png" />{" "}
+          <img src="https://pngimg.com/uploads/mysql/mysql_PNG31.png" />{" "}
           </div>
           <div className="tech">
-            MongoDB{" "}
+           
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png" />
           </div>
           <div className="tech">
-            React js{" "}
+          
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" />
           </div>
           <div className="tech">
-            Redux{" "}
+       
             <img src="https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png" />{" "}
           </div>
         </div>

@@ -1,3 +1,11 @@
+
+*{
+padding: 0;
+margin:0;
+
+}
+
+
 body {
   background-color: #dce4ec;
   color: #885a3b8c;
@@ -10,13 +18,18 @@ body {
   text-align: center;
   font-size: 30px;
   scroll-behavior: smooth;
+  gap: 50px;
+  height: 5rem;
+ 
 }
+
 
 .App .navbar button {
   border: none;
   background-color: #0e1e2e00;
-  color: #885a3b8c;
+  color: #dce4ec;
   font-size: 30px;
+  margin-left: 3rem;
 }
 
 .App .navbar :hover {
@@ -81,8 +94,8 @@ body {
 
 
 .App .tech-skills img {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
 }
 
 /* my-experience */
