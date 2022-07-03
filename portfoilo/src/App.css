@@ -1,21 +1,21 @@
 body {
-  background-color: black;
-  color: skyblue;
+  background-color: #dce4ec;
+  color: #885a3b8c;
 }
-
-.App .navbar {
+.navbar {
   display: flex;
-
+  background-color: #885a3b8c;
   align-items: center;
   align-content: center;
   text-align: center;
   font-size: 30px;
+  scroll-behavior: smooth;
 }
 
 .App .navbar button {
   border: none;
-  background-color: black;
-  color: skyblue;
+  background-color: #0e1e2e00;
+  color: #885a3b8c;
   font-size: 30px;
 }
 
@@ -34,7 +34,7 @@ body {
 
 .App .My-Name {
   font-size: 50px;
-  color: skyblue;
+  color: #885a3b8c;
 }
 
 .App .about_me_text {
@@ -57,28 +57,41 @@ body {
   border-radius: 50%;
 }
 
-
-
-
 .App .skills {
   margin-top: 125px;
   align-items: center;
-  background-color: black;
-  color: skyblue;
+  background-color: #dce4ec;
+  color: #885a3b8c;
   text-align: center;
   font-size: 30px;
 }
 
+.App .tech-skills {
+  display: flex;
+ gap: 20px;
+}
+
+.tech{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
+
+
+.App .tech-skills img {
+  height: 50px;
+  width: 50px;
+}
 
 /* my-experience */
 
 .App .my-experience {
   margin-top: 250px;
   align-items: center;
-  background-color: black;
-  color: skyblue;
+  background-color: #dce4ec;
+  color: #885a3b8c;
   text-align: center;
   font-size: 30px;
 }
@@ -99,10 +112,10 @@ body {
 .App .contact-me {
   display: flex;
   flex-direction: column;
-  margin-top: 500px;
+  margin-top: 350px;
   align-items: center;
-  background-color: black;
-  color: skyblue;
+  background-color: #dce4ec;
+  color: #885a3b8c;
   text-align: center;
   font-size: 30px;
   gap: 20px;

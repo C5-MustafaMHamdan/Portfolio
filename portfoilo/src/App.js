@@ -18,7 +18,7 @@ function App() {
 
   const skills = useRef(null);
   const scrollOnSkills = () => scrollToRef(skills);
-
+/*   */
   return (
     <div className="App">
       <div className="navbar">
@@ -46,8 +46,40 @@ function App() {
 
       <div ref={skills} className="skills">
         <p>Skills & Technology </p>
-         
 
+        <div className="tech-skills">
+          <div className="tech">
+            HTML5{" "}
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" />
+          </div>
+          <div className="tech">
+            CSS3{" "}
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" />
+          </div>
+          <div className="tech">
+            Node js{" "}
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/2560px-Node.js_logo_2015.svg.png" />{" "}
+          </div>
+          <div className="tech">
+            Express{" "}
+            <img src="https://initialcommit.com/img/initialcommit/beginners-guide-to-using-express-js-and-node-js-framework.png" />
+          </div>
+          <div className="tech">
+            MySQL <img src="https://pngimg.com/uploads/mysql/mysql_PNG31.png" />{" "}
+          </div>
+          <div className="tech">
+            MongoDB{" "}
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png" />
+          </div>
+          <div className="tech">
+            React js{" "}
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" />
+          </div>
+          <div className="tech">
+            Redux{" "}
+            <img src="https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png" />{" "}
+          </div>
+        </div>
       </div>
 
       <div ref={myExperience} className="my-experience">
@@ -77,6 +109,13 @@ function App() {
         <a href="https://www.linkedin.com/in/mustafahamda/">LinkedIn</a>
         <a href="https://github.com/MustafaMHamdan">Github</a>
       </div>
+
+
+
+ 
+
+
+      
     </div>
   );
 }
