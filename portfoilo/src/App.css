@@ -1,14 +1,11 @@
-
-*{
-padding: 0;
-margin:0;
-
+* {
+  padding: 0;
+  margin: 0;
 }
-
 
 body {
   background-color: #dce4ec;
-  color: #885a3b8c;
+  color: #5a5a5a;
 }
 .navbar {
   display: flex;
@@ -23,11 +20,10 @@ body {
   margin-bottom: left;
 }
 
-
 .App .navbar button {
   border: none;
   background-color: #0e1e2e00;
-  color: #dce4ec;
+  color: #5a5a5a;
   font-size: 30px;
   margin-left: 50px;
 }
@@ -47,7 +43,7 @@ body {
 
 .App .My-Name {
   font-size: 50px;
-  color: #885a3b8c;
+  color: #5a5a5a;
 }
 
 .App .about_me_text {
@@ -75,7 +71,7 @@ body {
   align-content: center;
   align-items: center;
   background-color: #dce4ec;
-  color: #885a3b8c;
+  color: #5a5a5a;
   text-align: center;
   font-size: 30px;
   margin-left: 310px;
@@ -83,18 +79,15 @@ body {
 
 .App .tech-skills {
   display: flex;
- gap: 50px;
- align-content: center;
+  gap: 50px;
+  align-content: center;
 }
 
-.tech{
+.tech {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-
-
 
 .App .tech-skills img {
   height: 50px;
@@ -104,35 +97,49 @@ body {
 /* my-experience */
 
 .App .my-experience {
-  margin-top: 250px;
+  margin-top: 150px;
   align-items: center;
   background-color: #dce4ec;
-  color: #885a3b8c;
+  color: #5a5a5a;
   text-align: center;
   font-size: 30px;
 }
 
-.my-experience .discord img {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
+.App .projects {
+  margin-bottom: 100px;
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  background-color: #dce4ec;
+  color: #5a5a5a;
+  text-align: center;
+  font-size: 30px;
+  gap: 10px;
+  text-align: start;
+
+  line-height: 2.5;
+  width: 100%;
 }
 
-.my-experience .doctors img {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
+.projects .cardImg {
+  height: 30rem;
+  width: 40rem;
 }
 
 /* contact-me */
 .App .contact-me {
   display: flex;
   flex-direction: column;
-  margin-top: 350px;
+  margin-top: 200px;
   align-items: center;
   background-color: #dce4ec;
-  color: #885a3b8c;
+  color: #5a5a5a;
   text-align: center;
   font-size: 30px;
   gap: 20px;
+}
+
+.App .contact-me img {
+  height: 100px;
+  width: 100px;
 }
