@@ -30,7 +30,9 @@ function App() {
   const scrollOnSkills = () => scrollToRef(skills);
   /*   */
   return (
+ 
     <div className="App">
+         
       <div className="navbar">
         <button onClick={scrollOnAbout}> About</button>
         <button onClick={scrollOnExperience}> Projects</button>
@@ -128,14 +130,17 @@ function App() {
       </div>
 
       <div ref={myContact} className="contact-me">
-        <h2>You Can Find Me There </h2>
+        <div className="findMe"><h2>You Can Find Me There </h2></div>
+        <div className="contactMe">
+          <div className="linkdIn">
         <a href="https://www.linkedin.com/in/mustafahamda/">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb5IK4NaSj_TqCzBxD92euNHBvly2plbDJativnsXZZoHpRgEq6h_uR5Fn-9oWDHC91Q8&usqp=CAU" />
-        </a>
-        <a href="https://github.com/MustafaMHamdan"> <img src="https://iconape.com/wp-content/png_logo_vector/github-circle-coreui-icons-v1-0-0.png" /></a>
+        </a></div>
+        <div className="gitHub"> <a href="https://github.com/MustafaMHamdan"> <img src="https://iconape.com/wp-content/png_logo_vector/github-circle-coreui-icons-v1-0-0.png" /></a> </div> </div>
       </div>
 
       <Container className="primary"></Container>
+    
     </div>
   );
 }
