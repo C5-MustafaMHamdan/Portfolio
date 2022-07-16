@@ -1,7 +1,16 @@
-  
+html,body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
+ 
+
+
+/*   Skills */
+
 .all {
   display: grid;
-  grid-template-columns: 1fr  1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
   perspective: 10px;
   transform: perspective(200px) rotateX(20deg);
@@ -11,10 +20,11 @@
   justify-content: center;
   transform-style: preserve-3d;
   margin-left: 100px;
+  margin-top: 120px;
 }
 .all:hover {
   perspective: 1000px;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
   transform: perspective(10000px) rotateX(0deg);
   .text {
     opacity: 1;
@@ -28,37 +38,41 @@
   }
 }
 
-.left, .center, .right, .lefter, .righter {
+.left,
+.center,
+.right,
+.lefter,
+.righter {
   width: 200px;
   height: 150px;
   transform-style: preserve-3d;
- 
+
   opacity: 0;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   transition-delay: 1s;
   position: relative;
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
- 
+
   cursor: pointer;
   background-blend-mode: color-burn;
-  
+
   &:hover {
-    box-shadow: 0 0 30px 10px rgba(100, 100, 255, .6);
-  background-color: #ccf;
+    box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.6);
+    background-color: #ccf;
   }
 }
 .text {
   transform: translateY(30px);
   opacity: 0;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   bottom: 0;
   left: 5px;
   position: absolute;
   will-change: transform;
-  color: black;
-  text-shadow: 0 0 5px rgba(100, 100, 255, .6)
+  color: white;
+  text-shadow: 0 0 5px rgba(100, 100, 255, 0.6);
 }
 #MySQL {
   transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
@@ -96,11 +110,13 @@
   transform: translateX(60px) translateZ(-50px) rotateY(10deg);
   background-image: url(https://icons-for-free.com/download-icon-super+tiny+icons+javascript-1324450741921820748_256.ico);
 }
-#appoint {margin-top: 200px;
+#appoint {
+  margin-top: 200px;
   transform: translateX(60px) translateZ(-50px) rotateY(10deg);
   background-image: url(https://res.cloudinary.com/dnin1rp5m/image/upload/v1656800802/docr_ggl4lw.jpg);
 }
-#discord {margin-top: 200px;
+#discord {
+  margin-top: 200px;
   transform: translateX(60px) translateZ(-50px) rotateY(10deg);
   background-image: url(https://res.cloudinary.com/dnin1rp5m/image/upload/v1656800895/discord_xcmquo.jpg);
   width: 400px;
@@ -111,57 +127,29 @@
   font-weight: 300;
   font-size: 2rem;
   color: #fff;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
   width: 100%;
   height: 100%;
   background-color: #303050;
-  
+
   border-radius: 10px;
-  text-shadow: 0 0 10px rgba(255, 255, 255, .8);
-  
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
- #proj{
-margin-top: 200px;
 
- }  
 
- /* teat  */
 
- 
 
- html {
-  box-sizing: border-box;
-  font-family: "Nothing You Could Do";
-}
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+/* Projects   */
 
-html,
-body {
-  height: 100%;
-}
+.Projects-title{
 
-body {
-  background-color: #F1F1F1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.heading {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  margin: 2vmin 3vmin;
-  color: #999;
+margin-bottom: 30px;
 }
 
 .card-container {
@@ -169,45 +157,62 @@ body {
   width: 65vmin;
   height: 80vmin;
   margin-left: 400px;
-  margin-top: 100px;
+  margin-top: 120px;
+  color: #fff;
+  font-size: 30px;
 }
 
 .cardy {
   position: absolute;
-  top: 0;
+  top: 5;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: darken(white, 2%);
   border-radius: 2px;
-  box-shadow: 2px 2px 5px rgba(#111, .35);
-  transition: transform .35s ease-out;
-  transform: translate(var(--x), var(--y)) scale(.35) rotate(var(--angle));
+  box-shadow: 2px 2px 5px rgba(#111, 0.35);
+  transition: transform 0.35s ease-out;
+  transform: translate(var(--x), var(--y)) scale(0.35) rotate(var(--angle));
   will-change: transform;
 
+
+ 
+
+  
   &:hover {
     transform: scale(1) rotate(0deg);
     z-index: 1;
+    
 
     &:before {
       opacity: 1;
     }
+    
   }
 }
+
+.cardy-desc  {
+  opacity: 0;
+}
+
+.cardy-desc:hover{opacity: 1;
+}
+
 
 .cardy:before {
   content: "";
   display: block;
+  
   width: 90%;
   height: 80%;
   margin: 5%;
   background: var(--image) center center no-repeat;
   background-size: cover;
-  box-shadow: inset 0 0 5px rgba(#222, .35);
+  box-shadow: inset 0 0 5px rgba(#222, 0.35);
   border-radius: 2px;
-  filter: sepia(.2) brightness(.9) contrast(1.2);
-  transition: opacity .35s ease-out;
-  opacity: .5;
+  filter: sepia(0.2) brightness(0.9) contrast(1.2);
+  transition: opacity 0.35s ease-out;
+  opacity: 0.5;
   will-change: opacity;
 }
 
@@ -217,22 +222,31 @@ body {
   font-weight: 500;
   color: #555;
   font-size: 3vmin;
-  opacity: .75;
+  opacity: 0.75;
   text-align: center;
-}
-
-#imgy1{
-
-  --image: url('https://res.cloudinary.com/dnin1rp5m/image/upload/v1656800895/discord_xcmquo.jpg'); --angle: -5deg; --x: 5%; --y: 15%;  
-}
-
- 
-
-#imgy2{
-  --image: url('https://res.cloudinary.com/dnin1rp5m/image/upload/v1656800802/docr_ggl4lw.jpg'); --angle: -1deg; --x: -10%; --y: -20%;  
   
-
 }
 
 
- 
+.p.cardy-desc:after {
+
+  opacity: 1;
+} 
+
+#imgy1 {
+  --image: url("https://res.cloudinary.com/dnin1rp5m/image/upload/v1656800895/discord_xcmquo.jpg");
+  --angle: -5deg;
+  --x: 5%;
+  --y: 15%;
+}
+
+#imgy2 {
+  --image: url("https://res.cloudinary.com/dnin1rp5m/image/upload/v1656800802/docr_ggl4lw.jpg");
+  --angle: -1deg;
+  --x: -10%;
+  --y: -20%;
+}
+
+
+
+
